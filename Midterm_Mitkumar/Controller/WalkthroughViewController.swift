@@ -8,7 +8,8 @@
 import UIKit
 
 class WalkthroughViewController: UIViewController, WalkthroughPageViewControllerDelegate {
-
+    
+    
     // Outlets
     
     @IBOutlet var pageControl: UIPageControl?
@@ -20,7 +21,12 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
         }
     }
     
-    @IBOutlet var skipButton: UIButton!
+    @IBOutlet var skipButton: UIButton! {
+        didSet {
+            skipButton.layer.cornerRadius = 25.0
+            skipButton.layer.masksToBounds = true
+        }
+    }
     
     // Properties
     
@@ -54,7 +60,7 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
         if let index = walkThroughPageViewController?.currentIndex {
             switch index {
             case 0...1:
-                nextButton.setTitle("Next", for: .normal)
+                nextButton.setTitle("Continue", for: .normal)
                 nextButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
                 skipButton.isHidden = false
             
@@ -75,7 +81,7 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         // Do any additional setup after loading the view.
     }
     

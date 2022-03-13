@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322A9F7B27DD73FD005DFE14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322A9F7A27DD73FD005DFE14 /* LoginViewController.swift */; };
 		3276E02327D9B3AF0093749F /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02227D9B3AF0093749F /* WalkthroughContentViewController.swift */; };
 		3276E02527D9B5E10093749F /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */; };
 		3276E02727D9BAB50093749F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02627D9BAB50093749F /* WalkthroughViewController.swift */; };
+		327A486727DDB8C300E92A80 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A486627DDB8C300E92A80 /* SignUpViewController.swift */; };
+		327A486927DDBAF700E92A80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A486827DDBAF700E92A80 /* HomeViewController.swift */; };
 		32F22FF427D96E4700CB4DBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F22FF327D96E4700CB4DBA /* AppDelegate.swift */; };
 		32F22FF627D96E4700CB4DBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F22FF527D96E4700CB4DBA /* SceneDelegate.swift */; };
 		32F22FF827D96E4700CB4DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F22FF727D96E4700CB4DBA /* ViewController.swift */; };
@@ -40,9 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		322A9F7A27DD73FD005DFE14 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3276E02227D9B3AF0093749F /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		3276E02627D9BAB50093749F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		327A486627DDB8C300E92A80 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		327A486827DDBAF700E92A80 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		32F22FF027D96E4700CB4DBA /* Midterm_Mitkumar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Midterm_Mitkumar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F22FF327D96E4700CB4DBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32F22FF527D96E4700CB4DBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,8 +94,12 @@
 			isa = PBXGroup;
 			children = (
 				3276E02227D9B3AF0093749F /* WalkthroughContentViewController.swift */,
+				32F22FF727D96E4700CB4DBA /* ViewController.swift */,
 				3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */,
+				322A9F7A27DD73FD005DFE14 /* LoginViewController.swift */,
 				3276E02627D9BAB50093749F /* WalkthroughViewController.swift */,
+				327A486627DDB8C300E92A80 /* SignUpViewController.swift */,
+				327A486827DDBAF700E92A80 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,10 +131,7 @@
 				32F2302327D96EBF00CB4DBA /* Storyboard */,
 				32F22FF327D96E4700CB4DBA /* AppDelegate.swift */,
 				32F22FF527D96E4700CB4DBA /* SceneDelegate.swift */,
-				32F22FF727D96E4700CB4DBA /* ViewController.swift */,
-				32F22FF927D96E4700CB4DBA /* Main.storyboard */,
 				32F22FFC27D96E4800CB4DBA /* Assets.xcassets */,
-				32F22FFE27D96E4800CB4DBA /* LaunchScreen.storyboard */,
 				32F2300127D96E4800CB4DBA /* Info.plist */,
 			);
 			path = Midterm_Mitkumar;
@@ -150,6 +157,8 @@
 		32F2302327D96EBF00CB4DBA /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				32F22FF927D96E4700CB4DBA /* Main.storyboard */,
+				32F22FFE27D96E4800CB4DBA /* LaunchScreen.storyboard */,
 				32F2302427D96EE900CB4DBA /* Onboarding.storyboard */,
 			);
 			path = Storyboard;
@@ -287,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322A9F7B27DD73FD005DFE14 /* LoginViewController.swift in Sources */,
 				32F22FF827D96E4700CB4DBA /* ViewController.swift in Sources */,
+				327A486727DDB8C300E92A80 /* SignUpViewController.swift in Sources */,
 				32F22FF427D96E4700CB4DBA /* AppDelegate.swift in Sources */,
 				3276E02527D9B5E10093749F /* WalkthroughPageViewController.swift in Sources */,
+				327A486927DDBAF700E92A80 /* HomeViewController.swift in Sources */,
 				3276E02727D9BAB50093749F /* WalkthroughViewController.swift in Sources */,
 				32F22FF627D96E4700CB4DBA /* SceneDelegate.swift in Sources */,
 				3276E02327D9B3AF0093749F /* WalkthroughContentViewController.swift in Sources */,

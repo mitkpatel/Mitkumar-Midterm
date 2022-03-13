@@ -17,9 +17,9 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     weak var walkthroughDelegate: WalkthroughPageViewControllerDelegate?
     
-    var pageHeadings = ["Welcome to the SwiftUI","Here is the example of Walkthrough","Click on the next button"]
-    var pageImages = ["iPhone","iPhone","iPhone"]
-    var pageSubheading = ["Open the calender and gernerate the reminder","Open the calender and gernerate the reminder","Open the calender and gernerate the reminder"]
+    var pageHeadings = ["Midterm - Mit Patel","Welcome to the SwiftUI","Click on the button"]
+    var pageImages = ["Walkthrough","Walkthrough","Walkthrough"]
+    var pageSubheading = ["Login into my App - N01415959","Open the calendar and gernerate the reminder","Create a To-Do list and save it"]
     
     var currentIndex = 0
 
@@ -32,7 +32,6 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
         if let startingViewController = contentViewController(at: 0) {
             setViewControllers([startingViewController], direction: .forward, animated: true, completion: nil)
         }
-
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
