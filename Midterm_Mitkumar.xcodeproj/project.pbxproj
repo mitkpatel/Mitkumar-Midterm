@@ -12,6 +12,7 @@
 		3276E02527D9B5E10093749F /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */; };
 		3276E02727D9BAB50093749F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02627D9BAB50093749F /* WalkthroughViewController.swift */; };
 		327A486727DDB8C300E92A80 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A486627DDB8C300E92A80 /* SignUpViewController.swift */; };
+		3299EAC527DE98DF0040BCE0 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3299EAC427DE98DF0040BCE0 /* NewAccountViewController.swift */; };
 		32A8BD6627DDD93700792460 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8BD6527DDD93700792460 /* CalenderViewController.swift */; };
 		32A8BD6827DDD95300792460 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8BD6727DDD95300792460 /* ToDoViewController.swift */; };
 		32A8BD6A27DDD96D00792460 /* FinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8BD6927DDD96D00792460 /* FinanceViewController.swift */; };
@@ -53,14 +54,15 @@
 		3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		3276E02627D9BAB50093749F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		327A486627DDB8C300E92A80 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3299EAC127DE8CD50040BCE0 /* Midterm_Mitkumar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Midterm_Mitkumar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3299EAC227DE8CD50040BCE0 /* Midterm_MitkumarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Midterm_MitkumarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3299EAC327DE8CD50040BCE0 /* Midterm_MitkumarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Midterm_MitkumarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3299EAC427DE98DF0040BCE0 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
 		32A8BD6527DDD93700792460 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 		32A8BD6727DDD95300792460 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		32A8BD6927DDD96D00792460 /* FinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewController.swift; sourceTree = "<group>"; };
 		32A8BD6B27DDD98300792460 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		32A8BD6D27DDDAB300792460 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		32D8879727DE621000FCD02C /* Midterm_Mitkumar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Midterm_Mitkumar.app; path = "/Users/user215540/Desktop/IOS/Midterm/Midterm_Mitkumar/build/Debug-iphoneos/Midterm_Mitkumar.app"; sourceTree = "<absolute>"; };
-		32D8879827DE621000FCD02C /* Midterm_MitkumarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Midterm_MitkumarTests.xctest; path = "/Users/user215540/Desktop/IOS/Midterm/Midterm_Mitkumar/build/Debug-iphoneos/Midterm_MitkumarTests.xctest"; sourceTree = "<absolute>"; };
-		32D8879927DE621000FCD02C /* Midterm_MitkumarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Midterm_MitkumarUITests.xctest; path = "/Users/user215540/Desktop/IOS/Midterm/Midterm_Mitkumar/build/Debug-iphoneos/Midterm_MitkumarUITests.xctest"; sourceTree = "<absolute>"; };
 		32D8879A27DE685000FCD02C /* PremiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumViewController.swift; sourceTree = "<group>"; };
 		32F22FF327D96E4700CB4DBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32F22FF527D96E4700CB4DBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				32A8BD6927DDD96D00792460 /* FinanceViewController.swift */,
 				32A8BD6B27DDD98300792460 /* SettingViewController.swift */,
 				32D8879A27DE685000FCD02C /* PremiumViewController.swift */,
+				3299EAC427DE98DF0040BCE0 /* NewAccountViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -124,6 +127,9 @@
 				32F22FF227D96E4700CB4DBA /* Midterm_Mitkumar */,
 				32F2300927D96E4800CB4DBA /* Midterm_MitkumarTests */,
 				32F2301327D96E4900CB4DBA /* Midterm_MitkumarUITests */,
+				3299EAC127DE8CD50040BCE0 /* Midterm_Mitkumar.app */,
+				3299EAC227DE8CD50040BCE0 /* Midterm_MitkumarTests.xctest */,
+				3299EAC327DE8CD50040BCE0 /* Midterm_MitkumarUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,7 +191,7 @@
 			);
 			name = Midterm_Mitkumar;
 			productName = Midterm_Mitkumar;
-			productReference = 32D8879727DE621000FCD02C /* Midterm_Mitkumar.app */;
+			productReference = 3299EAC127DE8CD50040BCE0 /* Midterm_Mitkumar.app */;
 			productType = "com.apple.product-type.application";
 		};
 		32F2300527D96E4800CB4DBA /* Midterm_MitkumarTests */ = {
@@ -203,7 +209,7 @@
 			);
 			name = Midterm_MitkumarTests;
 			productName = Midterm_MitkumarTests;
-			productReference = 32D8879827DE621000FCD02C /* Midterm_MitkumarTests.xctest */;
+			productReference = 3299EAC227DE8CD50040BCE0 /* Midterm_MitkumarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		32F2300F27D96E4900CB4DBA /* Midterm_MitkumarUITests */ = {
@@ -221,7 +227,7 @@
 			);
 			name = Midterm_MitkumarUITests;
 			productName = Midterm_MitkumarUITests;
-			productReference = 32D8879927DE621000FCD02C /* Midterm_MitkumarUITests.xctest */;
+			productReference = 3299EAC327DE8CD50040BCE0 /* Midterm_MitkumarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -312,6 +318,7 @@
 				32F22FF427D96E4700CB4DBA /* AppDelegate.swift in Sources */,
 				3276E02527D9B5E10093749F /* WalkthroughPageViewController.swift in Sources */,
 				3276E02727D9BAB50093749F /* WalkthroughViewController.swift in Sources */,
+				3299EAC527DE98DF0040BCE0 /* NewAccountViewController.swift in Sources */,
 				32F22FF627D96E4700CB4DBA /* SceneDelegate.swift in Sources */,
 				3276E02327D9B3AF0093749F /* WalkthroughContentViewController.swift in Sources */,
 			);
