@@ -17,6 +17,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var btnSignUp: UIButton!
     
+    var isPasswordValid: Bool = false
+    var isNameValid: Bool = false
+    var isAllValid: Bool = false
     
     @objc func tapOnButton() {
         let story = UIStoryboard(name: "Main", bundle: nil)
@@ -92,6 +95,18 @@ class LoginViewController: UIViewController {
                 return  returnValue
     }
     
+    
+    @objc func passwordCheck() {
+        if (password.text?.isEmpty)! {
+            isPasswordValid = false
+            return
+        }
+        else {
+            isPasswordValid = true
+        }
+    }
+    
+    
     @objc func login() {
         username.rightViewMode = .never
         if (username.text?.contains(" "))! {
@@ -100,7 +115,7 @@ class LoginViewController: UIViewController {
             imageView.contentMode = .scaleAspectFit
             username.rightView = imageView
             username.rightViewMode = .always
-        
+            isNameValid = true
             return
         }
         else {
@@ -167,8 +182,11 @@ class LoginViewController: UIViewController {
         username.addTarget(self, action: #selector(login), for: .editingChanged)
         
         btnSignUp.addTarget(self, action: #selector(tapOnButtonForNavigation), for: .touchUpInside)
-        btnLogIn.addTarget(self, action: #selector(tapOnButtonForNavigationHome), for: .touchUpInside)
-        
+        password.addTarget(self, action: #selector(passwordCheck), for: .editingChanged)
+        if isAllValid {
+            btnLogIn.addTarget(self, action: #selector(tapOnButtonForNavigationHome), for: .touchUpInside)
+
+        }
     }
     
     @IBAction func btnPasswordVisiblityClicked(_ sender: Any) {
@@ -181,5 +199,48 @@ class LoginViewController: UIViewController {
                button.setImage(UIImage(named: "Pfad 21"), for: .normal)
            }
        }
+    
+    func displayAlertMessage(messageToDisplay: String)
+       {
+           let alertController = UIAlertController(title: "Error!!!", message: messageToDisplay, preferredStyle: .alert)
+           
+           let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
+               
+               // Code in this block will trigger when OK button tapped.
+               print("Ok button tapped");
+               
+           }
+           
+           alertController.addAction(OKAction)
+           
+           self.present(alertController, animated: true, completion:nil)
+       }
+    
+    @IBAction func validation(_ sender: Any) {
+           (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
+        if (isNameValid && isPasswordValid) {
+            isAllValid = true
+            let story = UIStoryboard(name: "Main", bundle: nil)
+            let controller = story.instantiateViewController(withIdentifier: "HomeController") as!
+            HomeViewController
+            let navigation = UINavigationController(rootViewController: controller)
+            self.view.addSubview(navigation.view)
+            self.addChild(navigation)
+            navigation.didMove(toParent: self)
+        }
+        else if (!isNameValid && !isPasswordValid) {
+            displayAlertMessage(messageToDisplay: "Please provide valid Name and Password!")
+        }
+        else if (!isNameValid) {
+            displayAlertMessage(messageToDisplay: "Please provide valid Username!")
+        }
+        else if let text = password.text, text.isEmpty {
+            print("Password invalid");
+            displayAlertMessage(messageToDisplay: "Please enter the password!")
+        } else {
+            isPasswordValid = true
+        }
+       }
+
 
 }
