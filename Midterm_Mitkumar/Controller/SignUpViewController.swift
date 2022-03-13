@@ -262,13 +262,10 @@ class SignUpViewController: UIViewController {
            (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
         if (isNameValid && isEmailValid && isPasswordValid) {
             isAllValid = true
-            let story = UIStoryboard(name: "Main", bundle: nil)
-            let controller = story.instantiateViewController(withIdentifier: "HomeController") as!
-            HomeViewController
-            let navigation = UINavigationController(rootViewController: controller)
-            self.view.addSubview(navigation.view)
-            self.addChild(navigation)
-            navigation.didMove(toParent: self)
+            let tabBarController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "tabBarController")
+                if let navigator = self.navigationController {
+                     navigator.pushViewController(tabBarController, animated: true)
+            }
         }
         else if (!isEmailValid && !isNameValid) {
             displayAlertMessage(messageToDisplay: "Please provide valid Email and Name!")

@@ -182,6 +182,9 @@ class LoginViewController: UIViewController {
         username.addTarget(self, action: #selector(login), for: .editingChanged)
         
         btnSignUp.addTarget(self, action: #selector(tapOnButtonForNavigation), for: .touchUpInside)
+      
+        self.navigationItem.hidesBackButton = true
+        self.navigationItem.backButtonDisplayMode = .minimal
         password.addTarget(self, action: #selector(passwordCheck), for: .editingChanged)
         if isAllValid {
             btnLogIn.addTarget(self, action: #selector(tapOnButtonForNavigationHome), for: .touchUpInside)
@@ -220,13 +223,17 @@ class LoginViewController: UIViewController {
            (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
         if (isNameValid && isPasswordValid) {
             isAllValid = true
-            let story = UIStoryboard(name: "Main", bundle: nil)
-            let controller = story.instantiateViewController(withIdentifier: "HomeController") as!
-            HomeViewController
-            let navigation = UINavigationController(rootViewController: controller)
-            self.view.addSubview(navigation.view)
-            self.addChild(navigation)
-            navigation.didMove(toParent: self)
+            let tabBarController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "tabBarController")
+                if let navigator = self.navigationController {
+                     navigator.pushViewController(tabBarController, animated: true)
+            }
+//            let story = UIStoryboard(name: "Main", bundle: nil)
+//            let controller = story.instantiateViewController(withIdentifier: "HomeController") as!
+//            HomeViewController
+//            let navigation = UINavigationController(rootViewController: controller)
+//            self.view.addSubview(navigation.view)
+//            self.addChild(navigation)
+//            navigation.didMove(toParent: self)
         }
         else if (!isNameValid && !isPasswordValid) {
             displayAlertMessage(messageToDisplay: "Please provide valid Name and Password!")

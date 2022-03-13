@@ -265,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOG-9m-oRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1151" y="98"/>
+            <point key="canvasLocation" x="332" y="131"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="LSY-wI-zer">
@@ -401,11 +401,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGA-mE-tYT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1920" y="99"/>
+            <point key="canvasLocation" x="1097" y="131"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Eeq-Al-19p">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghP-U3-vGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="HomeController" id="pJo-VX-6qd" customClass="HomeViewController" customModule="Midterm_Mitkumar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rdl-ie-dnJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -423,9 +424,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ghP-U3-vGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1249" y="-575"/>
+            <point key="canvasLocation" x="1951" y="139"/>
         </scene>
     </scenes>
     <resources>
