@@ -23,16 +23,6 @@ class SignUpViewController: UIViewController {
     var isPasswordValid: Bool = false
     
     
-    @objc func tapOnButtonForNavigation() {
-        let story = UIStoryboard(name: "Main", bundle: nil)
-        let controller = story.instantiateViewController(withIdentifier: "HomeController") as!
-        HomeViewController
-        let navigation = UINavigationController(rootViewController: controller)
-        self.view.addSubview(navigation.view)
-        self.addChild(navigation)
-        navigation.didMove(toParent: self)
-    }
-    
     @IBOutlet weak var btnGoogle: UIButton! {
         didSet {
             btnGoogle.layer.cornerRadius = 15.0
@@ -217,7 +207,10 @@ class SignUpViewController: UIViewController {
         email.layer.shadowColor = UIColor.lightGray.cgColor
         
         password.rightViewMode = .unlessEditing
-                
+//                
+//        self.navigationItem.hidesBackButton = true
+//        self.navigationItem.backButtonDisplayMode = .minimal
+        
         button.setImage(UIImage(named: "Pfad 21"), for: .normal)
                 button.imageEdgeInsets = UIEdgeInsets(top: 5, left: -24, bottom: 5, right: 15)
                 button.frame = CGRect(x: CGFloat(password.frame.size.width - 25), y: CGFloat(5), width: CGFloat(15), height: CGFloat(25))
@@ -262,10 +255,17 @@ class SignUpViewController: UIViewController {
            (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
         if (isNameValid && isEmailValid && isPasswordValid) {
             isAllValid = true
-            let tabBarController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "tabBarController")
-                if let navigator = self.navigationController {
-                     navigator.pushViewController(tabBarController, animated: true)
-            }
+            let story = UIStoryboard(name: "Main", bundle: nil)
+            let controller = story.instantiateViewController(withIdentifier: "premiumController") as!
+            PremiumViewController
+            let navigation = UINavigationController(rootViewController: controller)
+            self.view.addSubview(navigation.view)
+            self.addChild(navigation)
+            navigation.didMove(toParent: self)
+//            let tabBarController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "tabBarController")
+//                if let navigator = self.navigationController {
+//                     navigator.pushViewController(tabBarController, animated: true)
+//            }
         }
         else if (!isEmailValid && !isNameValid) {
             displayAlertMessage(messageToDisplay: "Please provide valid Email and Name!")

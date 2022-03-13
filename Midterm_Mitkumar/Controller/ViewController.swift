@@ -77,15 +77,15 @@ class ViewController: UIViewController {
     }
     
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
-        if let walkthroughViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                self.present(walkthroughViewController, animated: true, completion: nil)
-            })
-        }
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        
+//        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+//        if let walkthroughViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
+//            
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+//                self.present(walkthroughViewController, animated: true, completion: nil)
+//            })
+//        }
+//    }
 
 }

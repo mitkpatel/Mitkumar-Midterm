@@ -39,16 +39,6 @@ class LoginViewController: UIViewController {
     }
     
     
-    @objc func tapOnButtonForNavigationHome() {
-        let story = UIStoryboard(name: "Main", bundle: nil)
-        let controller = story.instantiateViewController(withIdentifier: "HomeController") as!
-        HomeViewController
-        let navigation = UINavigationController(rootViewController: controller)
-        self.view.addSubview(navigation.view)
-        self.addChild(navigation)
-        navigation.didMove(toParent: self)
-    }
-    
     @IBOutlet weak var btnGoogle: UIButton! {
         didSet {
             btnGoogle.layer.cornerRadius = 15.0
@@ -186,10 +176,7 @@ class LoginViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         self.navigationItem.backButtonDisplayMode = .minimal
         password.addTarget(self, action: #selector(passwordCheck), for: .editingChanged)
-        if isAllValid {
-            btnLogIn.addTarget(self, action: #selector(tapOnButtonForNavigationHome), for: .touchUpInside)
 
-        }
     }
     
     @IBAction func btnPasswordVisiblityClicked(_ sender: Any) {

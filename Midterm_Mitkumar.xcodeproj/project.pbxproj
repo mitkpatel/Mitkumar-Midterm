@@ -12,12 +12,12 @@
 		3276E02527D9B5E10093749F /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */; };
 		3276E02727D9BAB50093749F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02627D9BAB50093749F /* WalkthroughViewController.swift */; };
 		327A486727DDB8C300E92A80 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A486627DDB8C300E92A80 /* SignUpViewController.swift */; };
-		327A486927DDBAF700E92A80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A486827DDBAF700E92A80 /* HomeViewController.swift */; };
 		32A8BD6627DDD93700792460 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8BD6527DDD93700792460 /* CalenderViewController.swift */; };
 		32A8BD6827DDD95300792460 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8BD6727DDD95300792460 /* ToDoViewController.swift */; };
 		32A8BD6A27DDD96D00792460 /* FinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8BD6927DDD96D00792460 /* FinanceViewController.swift */; };
 		32A8BD6C27DDD98300792460 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8BD6B27DDD98300792460 /* SettingViewController.swift */; };
 		32A8BD6E27DDDAB300792460 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A8BD6D27DDDAB300792460 /* Home.storyboard */; };
+		32D8879B27DE685000FCD02C /* PremiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8879A27DE685000FCD02C /* PremiumViewController.swift */; };
 		32F22FF427D96E4700CB4DBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F22FF327D96E4700CB4DBA /* AppDelegate.swift */; };
 		32F22FF627D96E4700CB4DBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F22FF527D96E4700CB4DBA /* SceneDelegate.swift */; };
 		32F22FF827D96E4700CB4DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F22FF727D96E4700CB4DBA /* ViewController.swift */; };
@@ -53,13 +53,15 @@
 		3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		3276E02627D9BAB50093749F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		327A486627DDB8C300E92A80 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		327A486827DDBAF700E92A80 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		32A8BD6527DDD93700792460 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 		32A8BD6727DDD95300792460 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		32A8BD6927DDD96D00792460 /* FinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewController.swift; sourceTree = "<group>"; };
 		32A8BD6B27DDD98300792460 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		32A8BD6D27DDDAB300792460 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		32F22FF027D96E4700CB4DBA /* Midterm_Mitkumar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Midterm_Mitkumar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D8879727DE621000FCD02C /* Midterm_Mitkumar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Midterm_Mitkumar.app; path = "/Users/user215540/Desktop/IOS/Midterm/Midterm_Mitkumar/build/Debug-iphoneos/Midterm_Mitkumar.app"; sourceTree = "<absolute>"; };
+		32D8879827DE621000FCD02C /* Midterm_MitkumarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Midterm_MitkumarTests.xctest; path = "/Users/user215540/Desktop/IOS/Midterm/Midterm_Mitkumar/build/Debug-iphoneos/Midterm_MitkumarTests.xctest"; sourceTree = "<absolute>"; };
+		32D8879927DE621000FCD02C /* Midterm_MitkumarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Midterm_MitkumarUITests.xctest; path = "/Users/user215540/Desktop/IOS/Midterm/Midterm_Mitkumar/build/Debug-iphoneos/Midterm_MitkumarUITests.xctest"; sourceTree = "<absolute>"; };
+		32D8879A27DE685000FCD02C /* PremiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumViewController.swift; sourceTree = "<group>"; };
 		32F22FF327D96E4700CB4DBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32F22FF527D96E4700CB4DBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		32F22FF727D96E4700CB4DBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,9 +69,7 @@
 		32F22FFC27D96E4800CB4DBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32F22FFF27D96E4800CB4DBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32F2300127D96E4800CB4DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32F2300627D96E4800CB4DBA /* Midterm_MitkumarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Midterm_MitkumarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F2300A27D96E4800CB4DBA /* Midterm_MitkumarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Midterm_MitkumarTests.swift; sourceTree = "<group>"; };
-		32F2301027D96E4900CB4DBA /* Midterm_MitkumarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Midterm_MitkumarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F2301427D96E4900CB4DBA /* Midterm_MitkumarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Midterm_MitkumarUITests.swift; sourceTree = "<group>"; };
 		32F2301627D96E4900CB4DBA /* Midterm_MitkumarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Midterm_MitkumarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		32F2302427D96EE900CB4DBA /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
@@ -109,11 +109,11 @@
 				322A9F7A27DD73FD005DFE14 /* LoginViewController.swift */,
 				3276E02627D9BAB50093749F /* WalkthroughViewController.swift */,
 				327A486627DDB8C300E92A80 /* SignUpViewController.swift */,
-				327A486827DDBAF700E92A80 /* HomeViewController.swift */,
 				32A8BD6527DDD93700792460 /* CalenderViewController.swift */,
 				32A8BD6727DDD95300792460 /* ToDoViewController.swift */,
 				32A8BD6927DDD96D00792460 /* FinanceViewController.swift */,
 				32A8BD6B27DDD98300792460 /* SettingViewController.swift */,
+				32D8879A27DE685000FCD02C /* PremiumViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -124,18 +124,7 @@
 				32F22FF227D96E4700CB4DBA /* Midterm_Mitkumar */,
 				32F2300927D96E4800CB4DBA /* Midterm_MitkumarTests */,
 				32F2301327D96E4900CB4DBA /* Midterm_MitkumarUITests */,
-				32F22FF127D96E4700CB4DBA /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		32F22FF127D96E4700CB4DBA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				32F22FF027D96E4700CB4DBA /* Midterm_Mitkumar.app */,
-				32F2300627D96E4800CB4DBA /* Midterm_MitkumarTests.xctest */,
-				32F2301027D96E4900CB4DBA /* Midterm_MitkumarUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		32F22FF227D96E4700CB4DBA /* Midterm_Mitkumar */ = {
@@ -196,7 +185,7 @@
 			);
 			name = Midterm_Mitkumar;
 			productName = Midterm_Mitkumar;
-			productReference = 32F22FF027D96E4700CB4DBA /* Midterm_Mitkumar.app */;
+			productReference = 32D8879727DE621000FCD02C /* Midterm_Mitkumar.app */;
 			productType = "com.apple.product-type.application";
 		};
 		32F2300527D96E4800CB4DBA /* Midterm_MitkumarTests */ = {
@@ -214,7 +203,7 @@
 			);
 			name = Midterm_MitkumarTests;
 			productName = Midterm_MitkumarTests;
-			productReference = 32F2300627D96E4800CB4DBA /* Midterm_MitkumarTests.xctest */;
+			productReference = 32D8879827DE621000FCD02C /* Midterm_MitkumarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		32F2300F27D96E4900CB4DBA /* Midterm_MitkumarUITests */ = {
@@ -232,7 +221,7 @@
 			);
 			name = Midterm_MitkumarUITests;
 			productName = Midterm_MitkumarUITests;
-			productReference = 32F2301027D96E4900CB4DBA /* Midterm_MitkumarUITests.xctest */;
+			productReference = 32D8879927DE621000FCD02C /* Midterm_MitkumarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +256,7 @@
 				Base,
 			);
 			mainGroup = 32F22FE727D96E4700CB4DBA;
-			productRefGroup = 32F22FF127D96E4700CB4DBA /* Products */;
+			productRefGroup = 32F22FE727D96E4700CB4DBA;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -316,12 +305,12 @@
 				32A8BD6A27DDD96D00792460 /* FinanceViewController.swift in Sources */,
 				32A8BD6627DDD93700792460 /* CalenderViewController.swift in Sources */,
 				32A8BD6C27DDD98300792460 /* SettingViewController.swift in Sources */,
+				32D8879B27DE685000FCD02C /* PremiumViewController.swift in Sources */,
 				322A9F7B27DD73FD005DFE14 /* LoginViewController.swift in Sources */,
 				32F22FF827D96E4700CB4DBA /* ViewController.swift in Sources */,
 				327A486727DDB8C300E92A80 /* SignUpViewController.swift in Sources */,
 				32F22FF427D96E4700CB4DBA /* AppDelegate.swift in Sources */,
 				3276E02527D9B5E10093749F /* WalkthroughPageViewController.swift in Sources */,
-				327A486927DDBAF700E92A80 /* HomeViewController.swift in Sources */,
 				3276E02727D9BAB50093749F /* WalkthroughViewController.swift in Sources */,
 				32F22FF627D96E4700CB4DBA /* SceneDelegate.swift in Sources */,
 				3276E02327D9B3AF0093749F /* WalkthroughContentViewController.swift in Sources */,
