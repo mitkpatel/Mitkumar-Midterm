@@ -38,6 +38,40 @@ class WalkthroughContentViewController: UIViewController {
         headingLabel.text = heading
         subHeadingLabel.text = subHeading
         contentImageView.image = UIImage(named: imageFile)
+        
+        headingLabel.alpha = 0
+        subHeadingLabel.alpha = 0
+        contentImageView.alpha = 0
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.contentImageView.alpha = 0.6
+        }) { (true) in
+            self.showHeading()
+        }
+        
+    }
+    
+    func showHeading() {
+        UIView.animate(withDuration: 1, animations: {
+            self.headingLabel.alpha = 0.6
+        }, completion: {
+            (true) in
+            
+            self.showSubHeading()
+        })
+    }
+    
+    func showSubHeading() {
+        UIView.animate(withDuration: 1, animations: {
+            self.subHeadingLabel.alpha = 0.6
+        }, completion: {
+            (true) in
+        })
     }
     
 }

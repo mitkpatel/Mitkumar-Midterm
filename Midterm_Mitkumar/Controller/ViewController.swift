@@ -11,8 +11,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myImage: UIImageView!
     
+    @IBOutlet weak var iconView: UIView!
+    
     @IBOutlet weak var btnNotification: UIButton!
     
+    @IBOutlet weak var labelHeading: UILabel!
+    @IBOutlet weak var labelSubHeading: UILabel!
+    
+    
+    let easeIn: UIView.AnimationOptions = [.curveEaseIn, .repeat, .autoreverse]
+    let easeOut: UIView.AnimationOptions = [.curveEaseInOut, .repeat, .autoreverse]
     
     @objc func tapOnButton() {
         let story = UIStoryboard(name: "Main", bundle: nil)
@@ -72,20 +80,34 @@ class ViewController: UIViewController {
         myImage.layer.masksToBounds = false
         
         btnNotification.addTarget(self, action: #selector(tapOnButtonForNavigation), for: .touchUpInside)
+      
+        UIView.animate(withDuration: 1.2, delay: 0.2, options: easeIn, animations: {
+            self.iconView.frame.origin.y += 60
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 1.5, delay: 0.5, options: easeOut, animations: {
+            self.labelHeading.transform = CGAffineTransform.identity.translatedBy(x: 80, y: 0)
+            self.labelHeading.transform = CGAffineTransform.identity.translatedBy(x: -80, y: 0)
+        }, completion: nil)
         
         // Do any additional setup after loading the view.
     }
     
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        
-//        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
-//        if let walkthroughViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
-//            
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-//                self.present(walkthroughViewController, animated: true, completion: nil)
-//            })
-//        }
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        
+        UIView.transition(with: labelHeading, duration: 3, options: easeIn, animations: {
+        }, completion: nil)
+        
+       
+        
+        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        if let walkthroughViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                self.present(walkthroughViewController, animated: true, completion: nil)
+            })
+        }
+    }
 
 }
