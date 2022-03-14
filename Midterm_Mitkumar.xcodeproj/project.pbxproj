@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		322A9F7B27DD73FD005DFE14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322A9F7A27DD73FD005DFE14 /* LoginViewController.swift */; };
+		325453C627DECA1D00BC2DB5 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325453C527DECA1D00BC2DB5 /* ShakingTextField.swift */; };
+		325453C827DECC9B00BC2DB5 /* Plusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325453C727DECC9B00BC2DB5 /* Plusing.swift */; };
 		3276E02327D9B3AF0093749F /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02227D9B3AF0093749F /* WalkthroughContentViewController.swift */; };
 		3276E02527D9B5E10093749F /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */; };
 		3276E02727D9BAB50093749F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02627D9BAB50093749F /* WalkthroughViewController.swift */; };
@@ -50,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		322A9F7A27DD73FD005DFE14 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		325453C527DECA1D00BC2DB5 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
+		325453C727DECC9B00BC2DB5 /* Plusing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plusing.swift; sourceTree = "<group>"; };
 		3276E02227D9B3AF0093749F /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		3276E02627D9BAB50093749F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				32A8BD6B27DDD98300792460 /* SettingViewController.swift */,
 				32D8879A27DE685000FCD02C /* PremiumViewController.swift */,
 				3299EAC427DE98DF0040BCE0 /* NewAccountViewController.swift */,
+				325453C527DECA1D00BC2DB5 /* ShakingTextField.swift */,
+				325453C727DECC9B00BC2DB5 /* Plusing.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -317,10 +323,12 @@
 				327A486727DDB8C300E92A80 /* SignUpViewController.swift in Sources */,
 				32F22FF427D96E4700CB4DBA /* AppDelegate.swift in Sources */,
 				3276E02527D9B5E10093749F /* WalkthroughPageViewController.swift in Sources */,
+				325453C827DECC9B00BC2DB5 /* Plusing.swift in Sources */,
 				3276E02727D9BAB50093749F /* WalkthroughViewController.swift in Sources */,
 				3299EAC527DE98DF0040BCE0 /* NewAccountViewController.swift in Sources */,
 				32F22FF627D96E4700CB4DBA /* SceneDelegate.swift in Sources */,
 				3276E02327D9B3AF0093749F /* WalkthroughContentViewController.swift in Sources */,
+				325453C627DECA1D00BC2DB5 /* ShakingTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

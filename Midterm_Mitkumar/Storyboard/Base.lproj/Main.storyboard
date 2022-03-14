@@ -80,9 +80,12 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enable Notifications" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym4-mD-a0p">
-                                        <rect key="frame" x="104" y="20" width="179.5" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym4-mD-a0p">
+                                        <rect key="frame" x="104" y="20" width="176" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text" base64-UTF8="YES">
+CFRhcCBPbiBPcmFuZ2UgSWNvbg
+</string>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         <nil key="highlightedColor"/>
@@ -106,6 +109,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="avatar" destination="1V4-2j-T3X" id="3Gs-iS-QeI"/>
                         <outlet property="btnNotification" destination="xae-Tb-DsS" id="O2u-Nn-mli"/>
                         <outlet property="iconView" destination="f8J-Kw-uH0" id="d4S-if-mjd"/>
                         <outlet property="labelHeading" destination="Ym4-mD-a0p" id="EyN-EE-5ZG"/>
@@ -132,7 +136,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name" minimumFontSize="29" translatesAutoresizingMaskIntoConstraints="NO" id="KVD-Ar-fpb">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name" minimumFontSize="29" translatesAutoresizingMaskIntoConstraints="NO" id="KVD-Ar-fpb" customClass="ShakingTextField" customModule="Midterm_Mitkumar" customModuleProvider="target">
                                 <rect key="frame" x="20" y="234" width="332" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -166,7 +170,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="29" translatesAutoresizingMaskIntoConstraints="NO" id="o51-sL-hv1">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="29" translatesAutoresizingMaskIntoConstraints="NO" id="o51-sL-hv1" customClass="ShakingTextField" customModule="Midterm_Mitkumar" customModuleProvider="target">
                                 <rect key="frame" x="20" y="334" width="332" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>

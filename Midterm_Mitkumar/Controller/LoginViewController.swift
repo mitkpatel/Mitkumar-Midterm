@@ -7,11 +7,11 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var username: ShakingTextField!
     
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var password: ShakingTextField!
 
     @IBOutlet weak var btnLogIn: UIButton!
     
@@ -113,9 +113,16 @@ class LoginViewController: UIViewController {
         }
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        username.shake()
+        password.shake()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        username.delegate = self
+        password.delegate = self
         let paddingView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: username.frame.height))
         username.leftView = paddingView
         username.leftViewMode = .always

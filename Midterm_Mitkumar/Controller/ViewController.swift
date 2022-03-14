@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var iconView: UIView!
     
+    @IBOutlet weak var avatar: UIImageView!
+    
     @IBOutlet weak var btnNotification: UIButton!
     
     @IBOutlet weak var labelHeading: UILabel!
@@ -71,6 +73,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         view.addSubview(splashLogo)
         myImage.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         myImage.layer.shadowOffset = CGSize(width: 6.0, height: 6.0)
@@ -78,6 +81,12 @@ class ViewController: UIViewController {
         myImage.layer.shadowRadius = 2.0
         myImage.layer.cornerRadius = 20
         myImage.layer.masksToBounds = false
+        
+        avatar.isUserInteractionEnabled = true
+        
+        let tapGes = UITapGestureRecognizer(target: self, action: #selector(ViewController.addPlus))
+        tapGes.numberOfTapsRequired = 1
+        avatar.addGestureRecognizer(tapGes)
         
         btnNotification.addTarget(self, action: #selector(tapOnButtonForNavigation), for: .touchUpInside)
       
@@ -93,6 +102,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @objc func addPlus() {
+        let plus = Pulsing(numberOfPulses: 1, radius: 110, position: avatar.center)
+        plus.animationDuration = 0.8
+        plus.backgroundColor = UIColor.systemOrange.cgColor
+        
+        self.view.layer.insertSublayer(plus, below: avatar.layer)
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         
