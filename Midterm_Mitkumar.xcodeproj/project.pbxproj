@@ -10,6 +10,7 @@
 		322A9F7B27DD73FD005DFE14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322A9F7A27DD73FD005DFE14 /* LoginViewController.swift */; };
 		325453C627DECA1D00BC2DB5 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325453C527DECA1D00BC2DB5 /* ShakingTextField.swift */; };
 		325453C827DECC9B00BC2DB5 /* Plusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325453C727DECC9B00BC2DB5 /* Plusing.swift */; };
+		325453CA27DED4CD00BC2DB5 /* AnimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325453C927DED4CD00BC2DB5 /* AnimView.swift */; };
 		3276E02327D9B3AF0093749F /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02227D9B3AF0093749F /* WalkthroughContentViewController.swift */; };
 		3276E02527D9B5E10093749F /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */; };
 		3276E02727D9BAB50093749F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276E02627D9BAB50093749F /* WalkthroughViewController.swift */; };
@@ -54,6 +55,7 @@
 		322A9F7A27DD73FD005DFE14 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		325453C527DECA1D00BC2DB5 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
 		325453C727DECC9B00BC2DB5 /* Plusing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plusing.swift; sourceTree = "<group>"; };
+		325453C927DED4CD00BC2DB5 /* AnimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimView.swift; sourceTree = "<group>"; };
 		3276E02227D9B3AF0093749F /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		3276E02427D9B5E10093749F /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		3276E02627D9BAB50093749F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				3299EAC427DE98DF0040BCE0 /* NewAccountViewController.swift */,
 				325453C527DECA1D00BC2DB5 /* ShakingTextField.swift */,
 				325453C727DECC9B00BC2DB5 /* Plusing.swift */,
+				325453C927DED4CD00BC2DB5 /* AnimView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				32A8BD6827DDD95300792460 /* ToDoViewController.swift in Sources */,
 				32A8BD6A27DDD96D00792460 /* FinanceViewController.swift in Sources */,
+				325453CA27DED4CD00BC2DB5 /* AnimView.swift in Sources */,
 				32A8BD6627DDD93700792460 /* CalenderViewController.swift in Sources */,
 				32A8BD6C27DDD98300792460 /* SettingViewController.swift in Sources */,
 				32D8879B27DE685000FCD02C /* PremiumViewController.swift in Sources */,
