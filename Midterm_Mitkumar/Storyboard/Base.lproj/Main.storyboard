@@ -405,6 +405,7 @@ CFRhcCBPbiBVcHBlcihyZWQpIEljb24
                         <outlet property="btnGoogle" destination="In2-NQ-lr0" id="wRu-dD-kS5"/>
                         <outlet property="btnLogIn" destination="WiE-3r-Ixs" id="oS8-uj-ugJ"/>
                         <outlet property="email" destination="QfC-hp-6Ly" id="Yhh-XB-8AP"/>
+                        <outlet property="labelText" destination="AsD-mB-iCi" id="zbA-gi-Ylj"/>
                         <outlet property="password" destination="Ozn-Hf-e9w" id="5tS-sf-bcK"/>
                         <outlet property="username" destination="bQZ-eZ-nT5" id="8Ag-Hs-GxR"/>
                     </connections>

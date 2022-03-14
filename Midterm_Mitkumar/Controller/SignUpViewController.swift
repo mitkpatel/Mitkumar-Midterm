@@ -17,6 +17,10 @@ class SignUpViewController: UIViewController {
 
     @IBOutlet weak var btnLogIn: UIButton!
     
+    @IBOutlet weak var labelText: UILabel!
+    
+    let flipAnimation: UIView.AnimationOptions = [.transitionFlipFromLeft, .repeat, .autoreverse]
+    
     var isEmailValid: Bool = false
     var isNameValid: Bool = false
     var isAllValid: Bool = false
@@ -221,6 +225,11 @@ class SignUpViewController: UIViewController {
         username.addTarget(self, action: #selector(Signin), for: .editingChanged)
         email.addTarget(self, action: #selector(emailCheck), for: .editingChanged)
         password.addTarget(self, action: #selector(passwordCheck), for: .editingChanged)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.transition(with: labelText, duration: 2.0, options: flipAnimation, animations: {
+        }, completion: nil)
     }
     
     func displayAlertMessage(messageToDisplay: String)
